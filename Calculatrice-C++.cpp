@@ -21,7 +21,7 @@ public:
         std::cout << "Entrez le premier nombre  : ";
         while (!(std::cin >> x))
         {
-            std::cout << "Entree invalide. Reessayez : ";
+            std::cout << "Entrée invalide. Reessayez : ";
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         }
@@ -29,13 +29,13 @@ public:
         std::cout << "Entrez le deuxieme nombre : ";
         while (!(std::cin >> y))
         {
-            std::cout << "Entree invalide. Reessayez : ";
+            std::cout << "Entrée invalide. Reessayez : ";
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         }
     }
 
-    double calcul() const
+    double calcul()
     {
         switch (operation)
         {
@@ -54,7 +54,7 @@ public:
         }
     }
 
-    void result() const
+    void result()
     {
         switch (operation)
         {
